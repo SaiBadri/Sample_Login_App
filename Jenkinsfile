@@ -9,7 +9,7 @@ pipeline {
     stages {
         stage('Git Checkout') {
             steps {
-                git branch: 'sample-dev', credentialsId: 'github-credentials', url: 'https://github.com/SaiBadri/java-hello-world-with-maven.git'
+                git branch: 'master', credentialsId: 'github-credentials', url: 'https://github.com/SaiBadri/Sample_Login_App.git'
             }
         }
         stage('Maven Build') {
